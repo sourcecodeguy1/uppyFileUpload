@@ -5,7 +5,7 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
 require('./db');
-require('dotenv').config({path:'/.env'});
+
 require('./cron/check_image_expiration');
 
 const bodyParser = require('body-parser');
