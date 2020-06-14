@@ -3,8 +3,9 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
-require('dotenv').config({path:'/.env'});
+
 require('./db');
+require('dotenv').config({path:'/.env'});
 require('./cron/check_image_expiration');
 
 const bodyParser = require('body-parser');
