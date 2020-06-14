@@ -3,7 +3,7 @@ let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
-require('dotenv').config();
+require('dotenv').config({path:'/.env'});
 require('./db');
 require('./cron/check_image_expiration');
 
