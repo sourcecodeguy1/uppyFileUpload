@@ -1,0 +1,37 @@
+<% var title = "Index"; %>
+
+<% include ../partials/top.ejs %>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-9">
+      <h4>Upload your pictures using uppy's file uploading</h4><br />
+    </div>
+  </div>
+<!----------------------------------------------------------------------------->
+  <div class="row mb-4">
+    <div class="col-md-2"></div>
+    <div class="col-md-10">
+      <div id="drag-drop-area"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-5"></div>
+    <div class="col-sm-7">
+      <a class="btn btn-success" href="/gallery">Go to gallery</a>
+    </div>
+  </div>
+  
+  <!--<form id="frm" action="">
+    <input type="file" id="my-file-input">
+    <button type="button" id="submit_btn" class="btn btn-primary">Submit</button>
+  </form>-->
+
+</div>
+
+<script src="/javascripts/bundle.js"></script>
+
+<% include ../partials/bottom.ejs %>
