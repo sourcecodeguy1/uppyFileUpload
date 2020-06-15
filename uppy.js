@@ -31,14 +31,6 @@ const uppy = Uppy({
         ]*/
     });
 
-uppy.on('file-added', (file) =>{
-    console.log(file);
-    /*uppy.setFileMeta(file.meta.id, {
-       caption: file.name
-    });*/
-
-});
-
 uppy.use(XHRUpload, {
     id: 'XHRUpload',
     endpoint: '/upload',
@@ -51,8 +43,6 @@ uppy.use(XHRUpload, {
 
 
 uppy.on('upload-success', (file, response) => {
-    console.log(file.meta.caption);
-    console.log("File uploaded successfully ", file);
 
     window.location.href = '/gallery';
 
