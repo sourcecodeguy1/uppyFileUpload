@@ -1,7 +1,5 @@
 let mysql_connection = require('../db');
 
-let db_rows = [];
-
 function InsertQueryFunction(TableName, Values) {
 
     //console.log("Coming from insert database script " + Values);
@@ -21,11 +19,9 @@ function InsertQueryFunction(TableName, Values) {
                     console.log("Number of records inserted: " + rows.affectedRows);
                     console.log("Success!");
 
-                    getDBRows(rows.affectedRows);
-
                 } else {
                     console.log("Error!!!");
-                    //return false;
+
                 }
 
             }
@@ -33,9 +29,5 @@ function InsertQueryFunction(TableName, Values) {
         });
 }
 
-function getDBRows(rows){
-    return db_rows.push({status: rows});
-}
-
-module.exports = {InsertQueryFunction, db_rows};
+module.exports = {InsertQueryFunction};
 
