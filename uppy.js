@@ -8,7 +8,7 @@ const uppy = Uppy({
     debug: true,
     autoProceed: false,
     restrictions: {
-        maxFileSize: 1024000,
+        maxFileSize: 5000000,
         maxNumberOfFiles: 3,
         minNumberOfFiles: 1,
         allowedFileTypes: ['image/*', 'video/*']
@@ -22,7 +22,7 @@ const uppy = Uppy({
         showProgressDetails: true,
         proudlyDisplayPoweredByUppy: false,
         animateOpenClose: true,
-        note: 'Images only, 1–3 files, up to 1 MB',
+        note: 'Images or videos only, 1–3 files, up to 5 MB',
         height: 470,
         browserBackButtonClose: true,
         theme: 'dark'
