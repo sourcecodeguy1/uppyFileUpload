@@ -1,6 +1,7 @@
 # Dependency directories
 node_modules/
 .idea
+public/images
 
 # Optional npm cache directory
 .npm
