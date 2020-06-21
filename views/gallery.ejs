@@ -18,13 +18,13 @@
         <% for(let i = 0; i < data.length; i++){ %>
             <%
                 let fileExt = data[i].photo_name;
-                let result  = fileExt.slice(16,19);
+                let new_file_ext = fileExt.substring(fileExt.lastIndexOf('.') + 1);
 
             %>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-2">
                 <div class="card h-100">
                     <%
-                        if(result === 'mp4') {
+                        if(new_file_ext === 'mp4') {
                     %>
 
                         <video class="img-fluid" playsinline muted controls>
